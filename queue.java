@@ -61,7 +61,7 @@ class Queue
     int rear() 
     { 
         if (isEmpty(this)) 
-            return Integer.MAX_VALUE; 
+            return Integer.MIN_VALUE; 
            
         return this.array[this.rear]; 
     } 
