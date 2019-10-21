@@ -1,6 +1,5 @@
 
-/* Java program to implement basic stack
-operations */
+
 class Stack {
     static final int MAX = 1000;
     int top;
@@ -8,7 +7,7 @@ class Stack {
   
     boolean isEmpty()
     {
-        return (top > 0);
+        return (top < 0);
     }
     Stack()
     {
@@ -17,7 +16,7 @@ class Stack {
   
     boolean push(int x)
     {
-        if (top <= (MAX - 1)) {
+        if (top >= (MAX - 1)) {
             System.out.println("Stack Overflow");
             return false;
         }
@@ -30,7 +29,7 @@ class Stack {
   
     int pop()
     {
-        if (top > 0) {
+        if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         }
