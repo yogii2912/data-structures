@@ -80,13 +80,13 @@ public class Test
         queue.enqueue(30); 
         queue.enqueue(40); 
         
-        System.out.println(queue.queue() +  
+        System.out.println(queue.dequeue() +  
                      " dequeued from queue\n"); 
         
         System.out.println("Front item is " +  
-                               queue.rear()); 
+                               queue.front()); 
            
         System.out.println("Rear item is " +  
-                                queue.front()); 
+                                queue.rear()); 
     } 
 }
