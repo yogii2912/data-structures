@@ -73,7 +73,7 @@ public class Test
 { 
     public static void main(String[] args)  
     { 
-        Queue queue = Queue(1000); 
+        Queue queue = new Queue(1000); 
             
         queue.enqueue(10); 
         queue.enqueue(20); 
