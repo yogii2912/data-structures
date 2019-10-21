@@ -41,7 +41,7 @@ class Stack {
   
     int peek()
     {
-        if (top > 0) {
+        if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
         }
